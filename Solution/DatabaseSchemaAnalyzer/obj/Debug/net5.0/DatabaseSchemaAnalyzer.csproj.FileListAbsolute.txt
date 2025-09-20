@@ -1,0 +1,13 @@
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\bin\Debug\net5.0\DatabaseSchemaAnalyzer.deps.json
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\bin\Debug\net5.0\DatabaseSchemaAnalyzer.dll
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\bin\Debug\net5.0\DatabaseSchemaAnalyzer.pdb
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.csproj.AssemblyReference.cache
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.AssemblyInfoInputs.cache
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.AssemblyInfo.cs
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.sourcelink.json
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.dll
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\refint\DatabaseSchemaAnalyzer.dll
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\DatabaseSchemaAnalyzer.pdb
+C:\Users\Alex\source\myProjects\DatabaseSchemaAnalyzer\Solution\DatabaseSchemaAnalyzer\obj\Debug\net5.0\ref\DatabaseSchemaAnalyzer.dll

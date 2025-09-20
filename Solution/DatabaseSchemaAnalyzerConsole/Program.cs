@@ -1,12 +1,28 @@
 ﻿using System;
-
-namespace DatabaseSchemaAnalyzerConsole
+using DatabaseSchemaAnalyzer;
+using DatabaseSchemaAnalyzer.Repositories;
+using DatabaseSchemaAnalyzer.Models;
+using System.Collections;
+using System.Linq;
+DapperDbContext dbContext = new DapperDbContext("(localdb)\\MSSQLLocalDB", "ITVDNdb");
+if (dbContext.TestConnection(out string status))
 {
-    class Program
+    using (var connection = dbContext.CreateConnection())
     {
-        static void Main(string[] args)
+        connection.Open();
+        SysTableRepository repo = new SysTableRepository(connection);
+        var tables = repo.GetTables() ?? Enumerable.Empty<Table>();
+
+        foreach (var table in tables)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("------------------");
+            Console.WriteLine("Name: {0}", table.Name);
+            Console.WriteLine("Create Date: {0}", table.CreateDate);
+            Console.WriteLine("Modify Date: {0}", table.ModifyDate);
         }
     }
-}
+
+} else 
+    Console.WriteLine(status);
+
+Console.ReadLine();
