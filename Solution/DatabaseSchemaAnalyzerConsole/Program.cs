@@ -10,8 +10,10 @@ if (dbContext.TestConnection(out string status))
     using (var connection = dbContext.CreateConnection())
     {
         connection.Open();
-        SysTableRepository repo = new SysTableRepository(connection);
-        var tables = repo.GetTables() ?? Enumerable.Empty<Table>();
+        SysTableRepository tableRepository = new SysTableRepository(connection);
+        SysColumnsRepository columnsRepository = new SysColumnsRepository(connection);
+
+        var tables = tableRepository.GetTables();
 
         foreach (var table in tables)
         {
@@ -19,6 +21,20 @@ if (dbContext.TestConnection(out string status))
             Console.WriteLine("Name: {0}", table.Name);
             Console.WriteLine("Create Date: {0}", table.CreateDate);
             Console.WriteLine("Modify Date: {0}", table.ModifyDate);
+            Console.WriteLine("Columns: ");
+
+            foreach (Column col in columnsRepository.GetColumns(table.Name))
+            {
+                string columnType = col.Length.HasValue
+                    ? string.Format("{0}({1})", col.DataType, col.Length)
+                    : col.DataType;
+
+                string isNull = col.IsNullable ? "NULL" : "NOT NULL";
+                string isIdentity = col.IsIdentity ? "IDENTITY" : "";
+
+                Console.WriteLine("{0} {1} {2} {3}", col.ColumnName, columnType, isNull, isIdentity);
+            }
+            Console.WriteLine("---------------");
         }
     }
 
